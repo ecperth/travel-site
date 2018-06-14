@@ -566,12 +566,9 @@ a {
 
 @media (min-width: 800px){
 
-.row__b-margin-untill-medium{
-            margin-bottom: 0
-    } 
-    }
-
-@media (min-width: 800px){
+        .row__b-margin-untill-medium{
+            margin-bottom: 0;
+        }
 
         .row__medium-4 {
             float: left;
