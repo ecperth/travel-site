@@ -8,8 +8,6 @@
     }
 
     ul{
-
-        
         margin: 0;
         padding: 0;
         @mixin clearfix
@@ -47,6 +45,10 @@
             padding: 12px 0;
             font-size: 1rem;
             background-color: transparent;
+
+            &.is-current-link{
+                color: #fabb69;
+            }
         }
     }
 }
