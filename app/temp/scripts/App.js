@@ -11395,13 +11395,22 @@ var StickyHeader = function () {
         this.siteHeader = (0, _jquery2.default)(".site-header");
         this.headerTriggerElement = (0, _jquery2.default)(".large-hero__title");
         this.createWaypoints();
+        this.lazyloadElement = (0, _jquery2.default)(".lazyload");
         this.pageSections = (0, _jquery2.default)(".page-section");
         this.headerLinks = (0, _jquery2.default)(".primary-nav a");
         this.createPageSectionWaypoints();
         this.addSmoothScrolling();
+        this.resetWaypoints();
     }
 
     _createClass(StickyHeader, [{
+        key: 'resetWaypoints',
+        value: function resetWaypoints() {
+            this.lazyloadElement.on('load', function () {
+                Waypoint.refreshAll();
+            });
+        }
+    }, {
         key: 'createWaypoints',
         value: function createWaypoints() {
             var that = this;
