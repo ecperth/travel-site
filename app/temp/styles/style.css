@@ -460,6 +460,10 @@ a {
         max-width: 976px;
     }
 
+.wrapper--narrow{
+        max-width: 470px;
+    }
+
 .wrapper--b-margin{
         padding-bottom: 1rem;
     }
@@ -744,7 +748,7 @@ a {
             margin-right: 0.5rem;
             display: inline-block;
             margin-left:0;
-            margin-right:0;
+            margin-right:35px;
             margin-bottom:0
     }
 
@@ -753,8 +757,13 @@ a {
             } 
     }
 
-.section-title__testimonials{
+.section-title__blue{
         color: #2f5572;
+    }
+
+.section-title--less-margin{
+        margin-top: 0;
+        margin-bottom: 1.3rem;
     }
 
 .feature-item{
@@ -1202,3 +1211,88 @@ instead edit gulp/templates/sprites.css*/
         -webkit-transform: scale(1);
                 transform: scale(1);
     }
+
+.modal {
+    position: fixed;
+    z-index: 5;
+    background-color: rgba(255,255,255,.94);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.modal__description{
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 300;
+        line-height: 1.65;
+    }
+
+.modal-close{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-weight: 600;
+        font-size: 2rem;
+        -webkit-transform: scalex(1.2);
+                transform: scalex(1.2);
+        -webkit-transform-origin: 100% 0;
+                transform-origin: 100% 0;
+        color: #2f5572;
+    }
+
+.modal-close:hover{
+            color: #d59541;
+            cursor: pointer;
+        }
+
+.modal-open{
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+
+.modal__inner{
+        position: relative;
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+    }
+
+.social-icons{
+    text-align: center;
+}
+
+.social-icons__icon{
+        background-color: #d59541;
+        display: inline-block;
+        margin: 0 5px 5px 5px;
+        width: 33%;
+        height: 72px;
+        position: relative;
+    }
+
+@media (min-width: 530px){
+
+.social-icons__icon{
+            width: 72px;
+            margin: 0 10px
+    } 
+    }
+
+.social-icons__icon .icon {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%)
+        }

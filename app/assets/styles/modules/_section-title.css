@@ -22,17 +22,21 @@
             margin-right: 0.5rem;
             display: inline-block;
             margin-left:0;
-            margin-right:0;
+            margin-right:35px;
             margin-bottom:0;
 
             &__testimonials{
                 margin-right: 2rem;
             }
-
         }
     }
 
-    &__testimonials{
+    &__blue{
         color: $mainBlue;
+    }
+
+    &--less-margin{
+        margin-top: 0;
+        margin-bottom: 1.3rem;
     }
 }
