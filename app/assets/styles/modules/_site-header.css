@@ -20,7 +20,7 @@
     &__logo{
         position: absolute;
         background-color: $mainBlue;
-        padding: 25px 36px;
+        padding: 24px 36px;
         display: block;
         top: 0;
         transition: transform .3s ease-out;
